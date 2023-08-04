@@ -5,14 +5,60 @@
     <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- <link href="css/style.css" rel="stylesheet"> -->
     <script src="./main.js" defer></script>
   </head>
-  <body class="h-screen">
-    <nav></nav>
-    <main class="h-full flex items-center justify-center">
-      <div class="bg-teal-100">hello world!</div>
-    </main>
-    <footer></footer>
+  <body class="h-screen overflow-x-hidden font-poppins bg-beige">
+    <div class="h-full w-full px-12">
+      <!-- nav -->
+      <nav class="w-full flex flex-row justify-between py-8">
+        <!-- icon -->
+        <div class="border-2 border-black rounded-sm aspect-square w-14 h-14">
+          <img src="./nori-icon.png" alt="" class="opject-cover w-full h-full">
+        </div>
+        <!-- links -->
+        <ul class="flex flex-row items-center gap-14">
+          <li>
+            <a href="#" class="text-orange">Home</a>
+          </li>
+          <li class="hover:text-orange transition duration-300">
+            <a href="#">Menu</a>
+          </li>
+          <li class="hover:text-orange transition duration-300">
+            <a href="#">Our Story</a>
+          </li>
+          <li class="hover:text-orange transition duration-300">
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- main content -->
+      <main class="h-fit w-full grid grid-cols-2 gap-10">
+        <div class="flex flex-col justify-center gap-4">
+          <h1 class="text-6xl text-orange font-semibold">ラーメン</h1>
+          <p class="text-black text-5xl font-light">〰️〰️〰️</p>
+          <h1 class="text-black text-5xl font-bold">A BOWL OF LOVE FROM <span class="text-orange">JAPANESE CUISINE</span> FOR YOU</h1>
+          <p class="mb-6">Ramen is a traditional Japanese noodle soup. It consists of Chinese wheat noodles served in meat or fish-based broth & uses toppings such as sliced pork, nori menma, and scallions.</p>
+          <div class="border-2 border-black rounded-md relative w-fit px-10 py-3 before:bg-orange before:text-white before:content-['Order_Now'] before:absolute before:w-full before:h-full before:top-[-14%] before:left-[7%] before:flex before:items-center before:justify-center before:rounded-md">Order Now</div>
+        </div>
+        <div class="grid place-items-center">
+          <img src="./ramen.png" alt="" class="object-cover w-9/12 h-fit">
+        </div>
+      </main>
+
+      <!-- social footer -->
+      <footer class="flex flex-row gap-14 items-center w-full py-8">
+        <div class="flex flex-row gap-14 text-orange">
+          <a href="">Instagram</a>
+          <a href="">Facebook</a>
+          <a href="">Twitter</a>
+        </div>
+        <div class="flex flex-grow h-[2.5px] bg-orange"></div>
+      </footer>
+    </div>
   </body>
 </html>
