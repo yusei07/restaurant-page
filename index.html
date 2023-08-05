@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
-    <title>Sweet Serenade!</title>
+    <title>Nori Restaurant | Bowl of Love</title>
     <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,16 +11,25 @@
     <!-- <link href="css/style.css" rel="stylesheet"> -->
     <script src="./main.js" defer></script>
   </head>
-  <body class="h-screen overflow-x-hidden font-poppins bg-beige">
-    <div class="h-full w-full px-12">
+  <body class="h-screen overflow-x-hidden font-poppins bg-beige md:bg-blue-200 lg:bg-red-200">
+    <div class="h-full w-full px-4 md:px-6 lg:px-12">
       <!-- nav -->
-      <nav class="w-full flex flex-row justify-between py-8">
+      <nav class="w-full flex flex-row justify-between pb-10 pt-5 md:pb-14 lg:py-8">
         <!-- icon -->
         <div class="border-2 border-black rounded-sm aspect-square w-14 h-14">
-          <img src="./nori-icon.png" alt="" class="opject-cover w-full h-full">
+          <img src="./nori-icon.png" alt="" class="object-cover w-full h-full">
         </div>
         <!-- links -->
-        <ul class="flex flex-row items-center gap-14">
+        <div class="md:hidden my-4 flex flex-row justify-center h-full px-3 cursor-pointer">
+          <span id="open-btn" class="flex flex-row items-center">
+            <i data-feather="menu" class="w-6 h-6 text-black stroke-[2]"></i>
+          </span>
+          <span id="close-btn" class="hidden flex flex-row items-center">
+            <i data-feather="x" class="w-6 h-6 text-black stroke-[2]"></i></span>
+        </div>
+
+        <!-- i want to show another part of the menu div (below this) -->
+        <ul class="hidden md:flex flex-row items-center gap-4 md:gap-14">
           <li>
             <a href="#" class="text-orange">Home</a>
           </li>
@@ -37,28 +46,29 @@
       </nav>
 
       <!-- main content -->
-      <main class="h-fit w-full grid grid-cols-2 gap-10">
+      <main class="h-fit w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10">
         <div class="flex flex-col justify-center gap-4">
-          <h1 class="text-6xl text-orange font-semibold">ラーメン</h1>
-          <p class="text-black text-5xl font-light">〰️〰️〰️</p>
-          <h1 class="text-black text-5xl font-bold">A BOWL OF LOVE FROM <span class="text-orange">JAPANESE CUISINE</span> FOR YOU</h1>
+          <h1 class="text-4xl md:text-5xl text-orange font-semibold">ラーメン</h1>
+          <p class="text-black text-4xl md:text-5xl font-light">〰️〰️〰️</p>
+          <h1 class="text-black text-4xl md:text-5xl font-bold">A BOWL OF LOVE FROM <span class="text-orange">JAPANESE CUISINE</span> FOR YOU</h1>
           <p class="mb-6">Ramen is a traditional Japanese noodle soup. It consists of Chinese wheat noodles served in meat or fish-based broth & uses toppings such as sliced pork, nori menma, and scallions.</p>
           <div class="border-2 border-black rounded-md relative w-fit px-10 py-3 before:bg-orange before:text-white before:content-['Order_Now'] before:absolute before:w-full before:h-full before:top-[-14%] before:left-[7%] before:flex before:items-center before:justify-center before:rounded-md">Order Now</div>
         </div>
         <div class="grid place-items-center">
-          <img src="./ramen.png" alt="" class="object-cover w-9/12 h-fit">
+          <img src="./ramen.png" alt="" class="object-cover w-9/12 h-fit md:w-11/12 lg:w-9/12">
         </div>
       </main>
 
       <!-- social footer -->
-      <footer class="flex flex-row gap-14 items-center w-full py-8">
-        <div class="flex flex-row gap-14 text-orange">
+      <footer class="flex flex-row gap-14 items-center justify-center md:justify-normal w-full pt-10 pb-5 md:pt-14 md:pb-0 lg:py-8">
+        <div class="flex flex-row gap-4 md:gap-14 text-orange">
           <a href="">Instagram</a>
           <a href="">Facebook</a>
           <a href="">Twitter</a>
         </div>
-        <div class="flex flex-grow h-[2.5px] bg-orange"></div>
+        <div class="hidden md:flex flex-grow h-[2.5px] bg-orange"></div>
       </footer>
     </div>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </body>
 </html>
