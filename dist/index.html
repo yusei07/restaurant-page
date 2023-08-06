@@ -11,25 +11,25 @@
     <!-- <link href="css/style.css" rel="stylesheet"> -->
     <script src="./main.js" defer></script>
   </head>
-  <body class="h-screen overflow-x-hidden font-poppins bg-beige md:bg-blue-200 lg:bg-red-200">
+  <body class="h-screen overflow-x-hidden font-poppins bg-beige">
     <div class="h-full w-full px-4 md:px-6 lg:px-12">
       <!-- nav -->
       <nav class="w-full flex flex-row justify-between pb-10 pt-5 md:pb-14 lg:py-8">
         <!-- icon -->
         <div class="border-2 border-black rounded-sm aspect-square w-14 h-14">
-          <img src="./nori-icon.png" alt="" class="object-cover w-full h-full">
+          <img src="./assets/nori-icon.png" alt="" class="object-cover w-full h-full">
         </div>
         <!-- links -->
         <div class="md:hidden my-4 flex flex-row justify-center h-full px-3 cursor-pointer">
-          <span id="open-btn" class="flex flex-row items-center">
+          <span id="open-btn" class="flex flex-row items-center z-10">
             <i data-feather="menu" class="w-6 h-6 text-black stroke-[2]"></i>
           </span>
-          <span id="close-btn" class="hidden flex flex-row items-center">
+          <span id="close-btn" class="hidden flex flex-row items-center z-10">
             <i data-feather="x" class="w-6 h-6 text-black stroke-[2]"></i></span>
         </div>
 
         <!-- i want to show another part of the menu div (below this) -->
-        <ul class="hidden md:flex flex-row items-center gap-4 md:gap-14">
+        <ul id="menu-item" class="hidden md:flex flex-col absolute top-0 left-0 md:static items-center justify-center pt-32 pb-16 md:pt-0 md:pb-0 md:justify-normal md:flex-row gap-6 md:gap-14 bg-[#ffffff] bg-opacity-90 md:bg-transparent w-full md:w-fit z-0">
           <li>
             <a href="#" class="text-orange">Home</a>
           </li>
@@ -55,7 +55,7 @@
           <div class="border-2 border-black rounded-md relative w-fit px-10 py-3 before:bg-orange before:text-white before:content-['Order_Now'] before:absolute before:w-full before:h-full before:top-[-14%] before:left-[7%] before:flex before:items-center before:justify-center before:rounded-md">Order Now</div>
         </div>
         <div class="grid place-items-center">
-          <img src="./ramen.png" alt="" class="object-cover w-9/12 h-fit md:w-11/12 lg:w-9/12">
+          <img src="./assets/ramen.png" alt="" class="object-cover w-9/12 h-fit md:w-11/12 lg:w-9/12">
         </div>
       </main>
 
