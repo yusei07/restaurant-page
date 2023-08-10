@@ -1,5 +1,7 @@
 import './style.css';
 import { landingHTML, navHTML } from './html-components.js';
+import displayStory from './story.js';
+import displayMenu from './menu.js';
 
 const container = document.querySelector("#container");
 
@@ -9,6 +11,33 @@ window.addEventListener("load", () => {
   container.insertAdjacentHTML("beforeend", landingHTML);
   displayNavItems();
   feather.replace();
+})
+
+container.addEventListener("click", (e) => {
+  if (e.target.id === "home") {
+    container.innerHTML = "";
+    container.parentNode.classList.remove('overflow-y-visible')
+    container.parentNode.classList.remove('md:overflow-y-hidden')
+
+    container.insertAdjacentHTML("beforeend", navHTML);
+    container.insertAdjacentHTML("beforeend", landingHTML);
+    displayNavItems();
+    feather.replace();
+  } else if (e.target.id === "menu") {
+    // remove the applied class (scroll disable) in case when returning back from story page
+    container.parentNode.classList.remove('overflow-y-visible')
+    container.parentNode.classList.remove('md:overflow-y-hidden')
+
+    displayMenu(container);
+    displayNavItems();
+  } else if (e.target.id === "story") {
+    // this disables the image to overflow the document (remove vertical scrolling on md device)
+    container.parentNode.classList.add('overflow-y-visible')
+    container.parentNode.classList.add('md:overflow-y-hidden')
+
+    displayStory(container);
+    displayNavItems();
+  }
 })
 
 function displayNavItems() {
