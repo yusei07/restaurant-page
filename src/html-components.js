@@ -2,7 +2,7 @@ export const navHTML = `<!-- nav -->
       <nav class="w-full flex flex-row justify-between pb-10 pt-5 md:pb-14 lg:py-8 px-4 md:px-6 lg:px-12">
         <!-- icon -->
         <div class="border-2 border-black rounded-sm aspect-square w-14 h-14">
-          <img src="./assets/nori-icon.png" alt="" class="object-cover w-full h-full">
+          <img src="./assets/nori-icon.webp" alt="" class="object-cover w-full h-full">
         </div>
         <!-- links -->
         <div class="md:hidden my-4 flex flex-row justify-center h-full px-3 cursor-pointer">
@@ -41,7 +41,7 @@ export const landingHTML = `<!-- main content -->
           <div class="border-2 border-black rounded-md relative w-fit px-10 py-3 before:bg-orange before:text-white before:content-['Order_Now'] before:absolute before:w-full before:h-full before:top-[-14%] before:left-[7%] before:flex before:items-center before:justify-center before:rounded-md">Order Now</div>
         </div>
         <div class="grid place-items-center">
-          <img src="./assets/ramen.png" alt="" class="object-cover w-9/12 h-fit md:w-11/12 lg:w-9/12">
+          <img src="./assets/ramen.webp" alt="" class="object-cover w-9/12 h-fit md:w-11/12 lg:w-9/12">
         </div>
       </main>
 
@@ -63,7 +63,7 @@ export const landingHTML = `<!-- main content -->
 export const storyHTML = `<main class="h-full w-full grid grid-cols-1 md:grid-cols-2 relative"> <!-- add gap here? -->
         <!-- img -->
         <div class="grid place-items-center pt-20 md:pt-0">
-          <img src="./assets/chef.png" alt="" class="object-cover w-full h-96 md:h-full">
+          <img src="./assets/chef.webp" alt="" class="object-cover w-full h-96 md:h-full">
         </div>
 
         <!-- right content -->
@@ -98,7 +98,7 @@ export const storyHTML = `<main class="h-full w-full grid grid-cols-1 md:grid-co
 
           <!-- icon -->
           <div class="absolute top-3 left-4 block md:hidden border-2 border-black rounded-sm aspect-square w-14 h-14">
-            <img src="./assets/nori-icon.png" alt="" class="object-cover w-full h-full">
+            <img src="./assets/nori-icon.webp" alt="" class="object-cover w-full h-full">
           </div>
 
 
@@ -119,32 +119,32 @@ export const storyHTML = `<main class="h-full w-full grid grid-cols-1 md:grid-co
       </main>`;
 
 
-export const menuHTML = `<div class="h-full w-full px-4 md:px-6 lg:px-12">
-        <main class="grid grid-cols-1 md:grid-cols-[20rem_auto] gap-8">
+export const menuHTML = `      <div class="h-full w-full px-4 md:px-6 lg:px-12">
+        <main class="grid grid-cols-1 md:grid-cols-[14rem_auto] lg:grid-cols-[20rem_auto] gap-8">
           <!-- header -->
           <div class="col-span-full text-center">
             <h2 class="text-orange text-3xl font-semibold">メニューを発見</h2>
             <h1 class="text-black text-4xl font-bold">DISCOVER OUR MENU</h1>
           </div>
           <!-- sidebar -->
-          <div class="md:pl-20">
-            <ul class="flex flex-row md:flex-col justify-center gap-6 md:gap-8 text-black overflow-y-auto whitespace-nowrap">
-              <li>All</li>
+          <div class="md:pl-10 lg:pl-20">
+            <ul class="flex flex-row md:flex-col justify-center gap-6 md:gap-8 text-black overflow-y-auto whitespace-nowrap ">
+              <li class="hover:text-orange transition duration-300">All</li>
               <li class="text-orange underline">Shio Ramen</li>
-              <li>Tonkotsu Ramen</li>
-              <li>Miso Ramen</li>
-              <li>Shoyu Ramen</li>
-              <li>Other Menu</li>
+              <li class="hover:text-orange transition duration-300">Tonkotsu Ramen</li>
+              <li class="hover:text-orange transition duration-300">Miso Ramen</li>
+              <li class="hover:text-orange transition duration-300">Shoyu Ramen</li>
+              <li class="hover:text-orange transition duration-300">Other Menu</li>
             </ul>
           </div>
           <!-- content  -->
-          <div class="h-fit grid grid-cols-[10rem_10rem] md:grid-cols-[14rem_14rem_14rem] md:grid-rows-1 gap-10">
+          <div class="h-fit grid grid-cols-[10rem_10rem] md:grid-cols-[12rem_12rem] lg:grid-cols-[14rem_14rem_14rem] md:grid-rows-1 gap-10">
             <!-- menu items -->
             <div class="h-fit bg-transparent hover:bg-white transition duration-300 rounded-md">
-              <div class="text-center bg-orange py-2 relative before:bg-black before:content-[''] before:absolute before:w-[10.7rem] md:before:w-[15rem] before:h-8 before:top-2 before:left-[-3.2%] before:z-[-1]">
+              <div class="text-center bg-orange py-2 relative before:bg-black before:content-[''] before:absolute before:w-[10.7rem] md:before:w-[12.8rem] lg:before:w-[15rem] before:h-8 before:top-2 before:left-[-3.2%] before:z-[-1]">
                 <h4 class="text-white text-lg">昔ながらの塩ら</h4>
               </div>
-              <img src="assets/ramen-display.png" alt="">
+              <img src="assets/ramen-display.webp" alt="">
               <div class="flex flex-col items-center pb-4">
                 <h4 class="text-black">Traditional Ramen</h4>
                 <h4 class="text-orange">¥4.700</h4>
@@ -152,57 +152,57 @@ export const menuHTML = `<div class="h-full w-full px-4 md:px-6 lg:px-12">
             </div>
 
             <div class="h-fit bg-transparent hover:bg-white transition duration-300 rounded-md">
-              <div class="text-center bg-orange py-2 relative before:bg-black before:content-[''] before:absolute before:w-[10.7rem] md:before:w-[15rem] before:h-8 before:top-2 before:left-[-3.2%] before:z-[-1]">
-                <h4 class="text-white text-lg">海風塩ら</h4>
+              <div class="text-center bg-orange py-2 relative before:bg-black before:content-[''] before:absolute before:w-[10.7rem] md:before:w-[12.8rem] lg:before:w-[15rem] before:h-8 before:top-2 before:left-[-3.2%] before:z-[-1]">
+                <h4 class="text-white text-lg">昔ながらの塩ら</h4>
               </div>
-              <img src="assets/ramen-display.png" alt="">
+              <img src="assets/ramen-display.webp" alt="">
               <div class="flex flex-col items-center pb-4">
-                <h4 class="text-black">Sea Breeze Ramen</h4>
-                <h4 class="text-orange">¥4.200</h4>
+                <h4 class="text-black">Traditional Ramen</h4>
+                <h4 class="text-orange">¥4.700</h4>
               </div>
             </div>
 
             <div class="h-fit bg-transparent hover:bg-white transition duration-300 rounded-md">
-              <div class="text-center bg-orange py-2 relative before:bg-black before:content-[''] before:absolute before:w-[10.7rem] md:before:w-[15rem] before:h-8 before:top-2 before:left-[-3.2%] before:z-[-1]">
-                <h4 class="text-white text-lg">禅塩ら</h4>
+              <div class="text-center bg-orange py-2 relative before:bg-black before:content-[''] before:absolute before:w-[10.7rem] md:before:w-[12.8rem] lg:before:w-[15rem] before:h-8 before:top-2 before:left-[-3.2%] before:z-[-1]">
+                <h4 class="text-white text-lg">昔ながらの塩ら</h4>
               </div>
-              <img src="assets/ramen-display.png" alt="">
+              <img src="assets/ramen-display.webp" alt="">
               <div class="flex flex-col items-center pb-4">
-                <h4 class="text-black">Zen Ramen</h4>
-                <h4 class="text-orange">¥3.900</h4>
+                <h4 class="text-black">Traditional Ramen</h4>
+                <h4 class="text-orange">¥4.700</h4>
               </div>
             </div>
 
             <div class="h-fit bg-transparent hover:bg-white transition duration-300 rounded-md">
-              <div class="text-center bg-orange py-2 relative before:bg-black before:content-[''] before:absolute before:w-[10.7rem] md:before:w-[15rem] before:h-8 before:top-2 before:left-[-3.2%] before:z-[-1]">
-                <h4 class="text-white text-lg">朝塩ら</h4>
+              <div class="text-center bg-orange py-2 relative before:bg-black before:content-[''] before:absolute before:w-[10.7rem] md:before:w-[12.8rem] lg:before:w-[15rem] before:h-8 before:top-2 before:left-[-3.2%] before:z-[-1]">
+                <h4 class="text-white text-lg">昔ながらの塩ら</h4>
               </div>
-              <img src="assets/ramen-display.png" alt="">
+              <img src="assets/ramen-display.webp" alt="">
               <div class="flex flex-col items-center pb-4">
-                <h4 class="text-black">Morning Ramen</h4>
-                <h4 class="text-orange">¥3.800</h4>
+                <h4 class="text-black">Traditional Ramen</h4>
+                <h4 class="text-orange">¥4.700</h4>
               </div>
             </div>
 
             <div class="h-fit bg-transparent hover:bg-white transition duration-300 rounded-md">
-              <div class="text-center bg-orange py-2 relative before:bg-black before:content-[''] before:absolute before:w-[10.7rem] md:before:w-[15rem] before:h-8 before:top-2 before:left-[-3.2%] before:z-[-1]">
-                <h4 class="text-white text-lg">旨辛塩ら</h4>
+              <div class="text-center bg-orange py-2 relative before:bg-black before:content-[''] before:absolute before:w-[10.7rem] md:before:w-[12.8rem] lg:before:w-[15rem] before:h-8 before:top-2 before:left-[-3.2%] before:z-[-1]">
+                <h4 class="text-white text-lg">昔ながらの塩ら</h4>
               </div>
-              <img src="assets/ramen-display.png" alt="">
+              <img src="assets/ramen-display.webp" alt="">
               <div class="flex flex-col items-center pb-4">
-                <h4 class="text-black">Umami Spice Ramen</h4>
-                <h4 class="text-orange">¥4.200</h4>
+                <h4 class="text-black">Traditional Ramen</h4>
+                <h4 class="text-orange">¥4.700</h4>
               </div>
             </div>
 
             <div class="h-fit bg-transparent hover:bg-white transition duration-300 rounded-md">
-              <div class="text-center bg-orange py-2 relative before:bg-black before:content-[''] before:absolute before:w-[10.7rem] md:before:w-[15rem] before:h-8 before:top-2 before:left-[-3.2%] before:z-[-1]">
-                <h4 class="text-white text-lg">究極塩ら</h4>
+              <div class="text-center bg-orange py-2 relative before:bg-black before:content-[''] before:absolute before:w-[10.7rem] md:before:w-[12.8rem] lg:before:w-[15rem] before:h-8 before:top-2 before:left-[-3.2%] before:z-[-1]">
+                <h4 class="text-white text-lg">昔ながらの塩ら</h4>
               </div>
-              <img src="assets/ramen-display.png" alt="">
+              <img src="assets/ramen-display.webp" alt="">
               <div class="flex flex-col items-center pb-4">
-                <h4 class="text-black">Ultimate Ramen</h4>
-                <h4 class="text-orange">¥5.200</h4>
+                <h4 class="text-black">Traditional Ramen</h4>
+                <h4 class="text-orange">¥4.700</h4>
               </div>
             </div>
 
@@ -217,19 +217,20 @@ export const menuHTML = `<div class="h-full w-full px-4 md:px-6 lg:px-12">
 
       </div>`;
 
-export const contactHTML = `<main class="w-full h-full grid grid-cols-[65%_35%] gap-10 px-4 md:px-6 lg:px-12">
+
+export const contactHTML = `      <main class="w-full h-full grid grid-cols-1 md:grid-cols-[65%_35%] gap-5 md:gap-10 px-4 md:px-6 lg:px-12">
         <!-- img & map iframe -->
-        <div class="w-full h-full grid grid-cols-2 gap-4">
+        <div class="w-full h-full grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="w-full h-full">
-            <img class="rounded-md" src="assets/kris-sevinc-NVX55qVyEkE-unsplash.jpg" alt="">
+            <img class="object-cover rounded-md w-full h-60 md:h-fit" src="assets/kris-sevinc-NVX55qVyEkE-unsplash.webp" alt="">
           </div>
           <div class="w-full h-full">
-            <iframe class="rounded-md w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.463607525998!2d135.49733817585033!3d34.668246984953335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e713a6175b99%3A0xf2523064f4092672!2zSmFwYW4sIOOAkjU0Mi0wMDcxIE9zYWthLCBDaHVvIFdhcmQsIETFjXRvbmJvcmksIDItY2jFjW1l4oiSMuKIkjcg5aGp576O5bGL!5e0!3m2!1sen!2sid!4v1691721252438!5m2!1sen!2sid" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="hidden md:block rounded-md w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.463607525998!2d135.49733817585033!3d34.668246984953335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e713a6175b99%3A0xf2523064f4092672!2zSmFwYW4sIOOAkjU0Mi0wMDcxIE9zYWthLCBDaHVvIFdhcmQsIETFjXRvbmJvcmksIDItY2jFjW1l4oiSMuKIkjcg5aGp576O5bGL!5e0!3m2!1sen!2sid!4v1691721252438!5m2!1sen!2sid" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 
         <!-- content -->
-        <div class="w-full h-full flex flex-col justify-center gap-8 px-2">
+        <div class="w-full h-full flex flex-col justify-center gap-6 md:gap-8 px-2 pb-5 md:pb-0">
           <div class="flex flex-col gap-4 text-black">
             <h2 class="text-orange text-3xl font-semibold">今すぐ注文</h2>
             <h1 class="text-black text-4xl font-bold">Book a Table For Dinner</h1>
