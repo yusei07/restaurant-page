@@ -216,3 +216,50 @@ export const menuHTML = `<div class="h-full w-full px-4 md:px-6 lg:px-12">
         </main>
 
       </div>`;
+
+export const contactHTML = `<main class="w-full h-full grid grid-cols-[65%_35%] gap-10 px-4 md:px-6 lg:px-12">
+        <!-- img & map iframe -->
+        <div class="w-full h-full grid grid-cols-2 gap-4">
+          <div class="w-full h-full">
+            <img class="rounded-md" src="assets/kris-sevinc-NVX55qVyEkE-unsplash.jpg" alt="">
+          </div>
+          <div class="w-full h-full">
+            <iframe class="rounded-md w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.463607525998!2d135.49733817585033!3d34.668246984953335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e713a6175b99%3A0xf2523064f4092672!2zSmFwYW4sIOOAkjU0Mi0wMDcxIE9zYWthLCBDaHVvIFdhcmQsIETFjXRvbmJvcmksIDItY2jFjW1l4oiSMuKIkjcg5aGp576O5bGL!5e0!3m2!1sen!2sid!4v1691721252438!5m2!1sen!2sid" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <!-- content -->
+        <div class="w-full h-full flex flex-col justify-center gap-8 px-2">
+          <div class="flex flex-col gap-4 text-black">
+            <h2 class="text-orange text-3xl font-semibold">今すぐ注文</h2>
+            <h1 class="text-black text-4xl font-bold">Book a Table For Dinner</h1>
+            <p>Just one phone call and we will reserve a table for you also you can choose table according you requirements family members.</p>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <div class="flex flex-row items-center gap-2">
+              <span>
+                <i data-feather="phone" class="w-4 h-4 text-black stroke-[2]"></i>
+              </span>
+              <div>noriramen@gmail.com</div>
+            </div>
+            <div class="flex flex-row items-center gap-2">
+              <span>
+                <i data-feather="mail" class="w-4 h-4 text-black stroke-[2]"></i>
+              </span>
+              <div>+8189-380-2671</div>
+            </div>
+            <div class="flex flex-row items-center gap-2">
+              <span>
+                <i data-feather="map-pin" class="w-4 h-4 text-black stroke-[2]"></i>
+              </span>
+              <div>2-2-7 Dotonbori, Chuo-ku, Osaka</div>
+            </div>
+          </div>
+
+          <div class="w-fit flex flex-row gap-2 items-center pl-8 pr-6 py-2 rounded-md bg-orange text-white hover:bg-white hover:text-orange transition duration-300">
+            Book Now <span><i data-feather="arrow-up-right" class="w-4 h-4 stroke-[3]"></i></span>
+          </div>
+
+        </div>
+      </main>`;
