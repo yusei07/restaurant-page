@@ -18,35 +18,50 @@ container.addEventListener("click", (e) => {
   if (e.target.id === "home") {
     // clear previous html and classes
     container.innerHTML = "";
-    container.parentNode.classList.remove('overflow-y-visible')
-    container.parentNode.classList.remove('md:overflow-y-hidden')
+    document.body.style.overflow = '';
+    // when opening nav it adds overflow hidden, this ensure it removes it after user confirms a page
+    enableScroll();
+    addScrollY(container);
 
     container.insertAdjacentHTML("beforeend", navHTML);
     container.insertAdjacentHTML("beforeend", landingHTML);
     menuSmListener();
     feather.replace();
   } else if (e.target.id === "menu") {
-    // remove the applied class (scroll disable) in case when returning back from story page
-    container.parentNode.classList.remove('overflow-y-visible')
-    container.parentNode.classList.remove('md:overflow-y-hidden')
+    enableScroll();
+    addScrollY(container);
 
     displayMenu(container);
     menuSmListener();
   } else if (e.target.id === "story") {
-    // this disables the image to overflow the document (remove vertical scrolling on md device)
-    container.parentNode.classList.add('overflow-y-visible')
-    container.parentNode.classList.add('md:overflow-y-hidden')
+    enableScroll();
+    removeScrollY(container);
 
     displayStory(container);
     menuSmListener();
   } else if (e.target.id === "contact") {
-    container.parentNode.classList.remove('overflow-y-visible')
-    container.parentNode.classList.remove('md:overflow-y-hidden')
+    enableScroll();
+    addScrollY(container);
 
     displayContact(container);
     menuSmListener();
   }
 })
+
+const addScrollY = (container) => {
+  // remove the applied class (scroll disable) in case when returning back from story page
+  let containerParentClass = container.parentNode.classList
+  if (containerParentClass.contains('overflow-y-visible') && containerParentClass.contains('md:overflow-y-hidden')) {
+    container.parentNode.classList.remove('overflow-y-visible');
+    container.parentNode.classList.remove('md:overflow-y-hidden');
+  }
+} 
+
+const removeScrollY = (container) => {
+  // this disables the image to overflow the document (remove vertical scrolling on md device)
+  container.parentNode.classList.add('overflow-y-visible');
+  container.parentNode.classList.add('md:overflow-y-hidden');
+}
 
 function menuSmListener() {
   const menuItems = document.querySelector("#menu-item");
