@@ -86,6 +86,17 @@ function menuSmListener() {
     closeIcon.classList.add('hidden');
     enableScroll();
   })
+
+  // close the menu when clicking outside of it
+  // document.addEventListener('click', (e) => {
+  //   if (!menuIcon.contains(e.target) && !menuItems.contains(e.target)) {
+  //     menuIcon.classList.remove('hidden');
+  //     menuItems.classList.add('hidden');
+  //     menuItems.classList.remove('flex');
+  //     closeIcon.classList.add('hidden');
+  //     enableScroll();
+  //   }
+  // })
 }
 
 function disableScroll() {
@@ -97,4 +108,4 @@ function enableScroll() {
 }
 
 // feather icon
-// feather.replace();
+feather.replace();
