@@ -6,15 +6,15 @@ export const navHTML = `<!-- nav -->
         </div>
         <!-- links -->
         <div class="md:hidden my-4 flex flex-row justify-center h-full px-3 cursor-pointer">
-          <span id="open-btn" class="flex flex-row items-center z-10">
+          <span id="open-btn" class="flex flex-row items-center z-20">
             <i data-feather="menu" class="w-6 h-6 text-black stroke-[2]"></i>
           </span>
-          <span id="close-btn" class="hidden flex flex-row items-center z-10">
+          <span id="close-btn" class="hidden flex flex-row items-center z-20">
             <i data-feather="x" class="w-6 h-6 text-black stroke-[2]"></i></span>
         </div>
 
         <!-- i want to show another part of the menu div (below this) -->
-        <ul id="menu-item" class="hidden md:flex flex-col absolute top-0 left-0 md:static items-center justify-center pt-32 pb-16 md:pt-0 md:pb-0 md:justify-normal md:flex-row gap-6 md:gap-14 bg-[#ffffff] bg-opacity-90 md:bg-transparent w-full md:w-fit z-0">
+        <ul id="menu-item" class="hidden flex-col md:flex absolute top-0 left-2/4 md:static justify-center md:items-center pl-6 pb-48 md:flex-row gap-6 md:gap-14 bg-[#ffffff] bg-opacity-90 md:bg-transparent w-full h-full md:w-fit z-10">
           <li id="home" class="cursor-pointer hover:text-orange transition duration-300">
             Home
           </li>
