@@ -31,30 +31,30 @@ export const navHTML = `<!-- nav -->
       </nav>`;
 
 export const landingHTML = `<!-- main content -->
-    <div class="h-full w-full px-4 md:px-6 lg:px-12">
-      <main class="h-fit w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10">
-        <div class="flex flex-col justify-center gap-4">
-          <h1 class="text-4xl md:text-5xl text-orange font-semibold">ラーメン</h1>
-          <p class="text-black text-4xl md:text-5xl font-light">〰️〰️〰️</p>
-          <h1 class="text-black text-4xl md:text-5xl font-bold">A BOWL OF LOVE FROM <span class="text-orange">JAPANESE CUISINE</span> FOR YOU</h1>
-          <p class="mb-6">Ramen is a traditional Japanese noodle soup. It consists of Chinese wheat noodles served in meat or fish-based broth & uses toppings such as sliced pork, nori menma, and scallions.</p>
-          <div class="border-2 border-black rounded-md relative w-fit px-10 py-3 before:bg-orange before:text-white before:content-['Order_Now'] before:absolute before:w-full before:h-full before:top-[-14%] before:left-[7%] before:flex before:items-center before:justify-center before:rounded-md">Order Now</div>
-        </div>
-        <div class="grid place-items-center">
-          <img src="./assets/ramen.webp" alt="" class="object-cover w-9/12 h-fit md:w-11/12 lg:w-9/12">
-        </div>
-      </main>
+      <div class="h-full w-full px-4 md:px-6 lg:px-12">
+        <main class="h-fit w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10">
+          <div class="flex flex-col justify-center gap-4">
+            <h1 class="text-3xl md:text-4xl lg:text-4xl text-orange font-semibold">ラーメン</h1>
+            <p class="text-black text-4xl lg:text-5xl font-light">〰️〰️〰️</p>
+            <h1 class="text-black text-4xl lg:text-5xl font-bold">A BOWL OF LOVE FROM <span class="text-orange">JAPANESE CUISINE</span> FOR YOU</h1>
+            <p class="mb-6">Ramen is a traditional Japanese noodle soup. It consists of Chinese wheat noodles served in meat or fish-based broth & uses toppings such as sliced pork, nori menma, and scallions.</p>
+            <div class="border-2 border-black rounded-md relative w-fit px-10 py-3 before:bg-orange before:text-white before:content-['Order_Now'] before:absolute before:w-full before:h-full before:top-[-14%] before:left-[7%] before:flex before:items-center before:justify-center before:rounded-md">Order Now</div>
+          </div>
+          <div class="grid place-items-center">
+            <img src="./assets/ramen.webp" alt="" class="object-cover w-9/12 h-fit md:w-11/12 lg:w-9/12">
+          </div>
+        </main>
 
-      <!-- social footer -->
-      <footer class="flex flex-row gap-14 items-center justify-center md:justify-normal w-full pt-10 pb-5 md:pt-14 md:pb-0 lg:py-8">
-        <div class="flex flex-row gap-4 md:gap-14 text-orange">
-          <a href="">Instagram</a>
-          <a href="">Facebook</a>
-          <a href="">Twitter</a>
-        </div>
-        <div class="hidden md:flex flex-grow h-[2.5px] bg-orange"></div>
-      </footer>
-    </div>`;
+        <!-- social footer -->
+        <footer class="flex flex-row gap-14 items-center justify-center md:justify-normal w-full pt-10 pb-5 md:pt-20 md:pb-0 lg:py-8">
+          <div class="flex flex-row gap-4 md:gap-14 text-orange">
+            <a href="">Instagram</a>
+            <a href="">Facebook</a>
+            <a href="">Twitter</a>
+          </div>
+          <div class="hidden md:flex flex-grow h-[2.5px] bg-orange"></div>
+        </footer>
+      </div>`;
 
 // our story page notes:
 // 1. you have to add `overflow-y-visible md:overflow-y-hidden` class to the body tag
