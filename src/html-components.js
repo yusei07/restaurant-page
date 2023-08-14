@@ -60,66 +60,30 @@ export const landingHTML = `<!-- main content -->
 // 1. you have to add `overflow-y-visible md:overflow-y-hidden` class to the body tag
 // 2. no need for nav, it already has its own custom nav
 
-export const storyHTML = `<main class="h-full w-full grid grid-cols-1 lg:grid-cols-2 relative">
-              <!-- img -->
-              <div class="grid place-items-center pt-20 lg:pt-0">
-                <img src="./assets/chef.webp" alt="" class="object-cover w-full h-96 lg:h-full">
-              </div>
+export const storyHTML = `<main class="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[45%_55%] gap-5 md:gap-10 px-4 md:px-6 lg:px-12 relative">
+        <!-- img & map iframe -->
+        <div class="grid place-items-center">
+          <img class="object-cover rounded-md w-full h-60 md:h-[40rem]" src="assets/chef.webp" alt="">
+        </div>
 
-              <!-- right content -->
-              <div class="w-full h-full flex flex-col px-4 md:px-6 lg:px-12 gap-0 lg:gap-52">
-
-                <!-- nav -->
-                <nav class="absolute top-2 right-2 lg:static md:w-full md:pt-5 md:pb-14 lg:py-8 ">
-                  <!-- nav links -->
-                  <div class="md:hidden my-4 flex flex-row justify-center h-full px-3 cursor-pointer">
-                    <span id="open-btn" class="flex flex-row items-center z-10">
-                      <i data-feather="menu" class="w-6 h-6 text-black stroke-[2]"></i>
-                    </span>
-                    <span id="close-btn" class="hidden flex flex-row items-center z-10">
-                      <i data-feather="x" class="w-6 h-6 text-black stroke-[2]"></i></span>
-                  </div>
-
-                  <ul id="menu-item" class="ml-auto hidden md:flex flex-col absolute top-0 left-0 md:static items-center justify-center pt-32 pb-16 md:pt-0 md:pb-0 md:justify-normal md:flex-row gap-6 md:gap-14 bg-[#ffffff] bg-opacity-90 md:bg-transparent w-full md:w-fit z-0">
-                    <li id="home" class="cursor-pointer hover:text-orange transition duration-300">
-                      Home
-                    </li>
-                    <li id="menu" class="cursor-pointer hover:text-orange transition duration-300">
-                      Menu
-                    </li>
-                    <li id="story" class="cursor-pointer hover:text-orange transition duration-300">
-                      Our Story
-                    </li>
-                    <li id="contact" class="cursor-pointer hover:text-orange transition duration-300">
-                      Contact Us
-                    </li>
-                  </ul>
-                </nav>
-
-                <!-- icon -->
-                <div class="absolute top-3 left-4 block lg:hidden border-2 border-black rounded-sm aspect-square w-14 h-14">
-                  <img src="./assets/nori-icon.webp" alt="" class="object-cover w-full h-full">
-                </div>
+        <!-- content -->
+        <div class="w-full h-full flex flex-col justify-center gap-6 md:gap-8 lg:px-2 pb-5 md:pb-0 z-0">
+          <div class="flex flex-col justify-center gap-4 z-10 pt-9 md:pt-10 lg:pt-0">
+            <h2 class="text-orange text-3xl font-semibold">私たちに関しては</h2>
+            <h1 class="text-black text-4xl font-bold">NORI RAMEN SHOP</h1>
+            <p class="">"Nori", where tradition meets innovation in the heart of the city. Chef Kenji Nakamura's ramen shop, established in 2015, offers authentic flavors with fresh, locally sourced ingredients. A culinary oasis loved by ramen enthusiasts and casual diners alike.</p>
+          </div>
 
 
-                <div class="hidden md:block absolute top-3/4 lg:top-1/4 md:right-8 lg:right-16 tracking-wider z-[-1] [writing-mode:vertical-lr] md:h-fit">
-                  <h1 class="md:text-4xl lg:text-6xl text-black text-opacity-10">のりラーメン</h1>
-                </div>
+          <div class="hidden md:block absolute md:top-4 lg:top-1/4 md:right-8 lg:right-16 tracking-wider z-[-1] [writing-mode:vertical-lr] md:h-fit">
+            <h1 class="md:text-4xl lg:text-6xl text-black text-opacity-10">のりラーメン</h1>
+          </div>
+
+        </div>
+      </main>`;
 
 
-                <!-- main content -->
-                <div class="flex flex-col justify-center gap-4 z-10 pt-9 md:pt-10 lg:pt-0">
-                  <h2 class="text-orange text-3xl font-semibold">私たちに関しては</h2>
-                  <h1 class="text-black text-4xl font-bold">NORI RAMEN SHOP</h1>
-                  <p class="">"Nori", where tradition meets innovation in the heart of the city. Chef Kenji Nakamura's ramen shop, established in 2015, offers authentic flavors with fresh, locally sourced ingredients. A culinary oasis loved by ramen enthusiasts and casual diners alike.</p>
-                </div>
-
-
-              </div>
-            </main>`;
-
-
-export const menuHTML = `      <div class="h-full w-full px-4 md:px-6 lg:px-12">
+export const menuHTML = `<div class="h-full w-full px-4 md:px-6 lg:px-12">
         <main class="grid grid-cols-1 md:grid-cols-[14rem_auto] lg:grid-cols-[20rem_auto] gap-8">
           <!-- header -->
           <div class="col-span-full text-center">
@@ -128,7 +92,7 @@ export const menuHTML = `      <div class="h-full w-full px-4 md:px-6 lg:px-12">
           </div>
           <!-- sidebar -->
           <div class="md:pl-10 lg:pl-20">
-            <ul class="flex flex-row md:flex-col justify-center gap-6 md:gap-8 text-black overflow-y-auto whitespace-nowrap ">
+            <ul class="flex flex-row md:flex-col justify-center gap-6 md:gap-8 text-black overflow-y-auto whitespace-nowrap">
               <li class="hover:text-orange transition duration-300">All</li>
               <li class="text-orange underline">Shio Ramen</li>
               <li class="hover:text-orange transition duration-300">Tonkotsu Ramen</li>
@@ -138,7 +102,7 @@ export const menuHTML = `      <div class="h-full w-full px-4 md:px-6 lg:px-12">
             </ul>
           </div>
           <!-- content  -->
-          <div class="h-fit grid grid-cols-[10rem_10rem] md:grid-cols-[12rem_12rem] lg:grid-cols-[14rem_14rem_14rem] md:grid-rows-1 gap-10">
+          <div class="h-fit grid grid-cols-[10rem_10rem] md:grid-cols-[12rem_12rem] lg:grid-cols-[14rem_14rem_14rem] md:grid-rows-1 gap-10 justify-center md:justify-normal">
             <!-- menu items -->
             <div class="h-fit bg-transparent hover:bg-white transition duration-300 rounded-md">
               <div class="text-center bg-orange py-2 relative before:bg-black before:content-[''] before:absolute before:w-[10.7rem] md:before:w-[12.8rem] lg:before:w-[15rem] before:h-8 before:top-2 before:left-[-3.2%] before:z-[-1]">
